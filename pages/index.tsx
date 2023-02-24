@@ -25,34 +25,33 @@ export default function Home() {
       <main className={styles.main}>
         <section className={styles.header}>
           <div className={styles.headerText}>
-            <div className="container">
             <div className={styles.countdownSection}>
-              <div className="row">
-                  <div className="col-12">
-                      <div className={styles.countdownContainerOutter}>
-                        <h5>Voting Begins in</h5>
-                        <div className={styles.countdownContainer}>
-                        <LaunchCountdown days={8}
-                              hours={23}
-                              minutes={55}
-                              seconds={41}
-                        />
-                        </div>
-                      </div> 
-                    </div>
-                </div>
-            
-
-          </div>
+                <div className="row">
+                    <div className="col-12">
+                        <div className={styles.countdownContainerOutter}>
+                          <h5>Voting Begins in</h5>
+                          <div className={styles.countdownContainer}>
+                          <LaunchCountdown days={8}
+                                hours={23}
+                                minutes={55}
+                                seconds={41}
+                          />
+                          </div>
+                        </div> 
+                      </div>
+                  </div>
+              </div>
+            <div className="container">
               <div className="row">
                 <div className="col-6">
                   <div className={styles.nextContest}>
                     <div className={styles.image}>
                       <Image
-                            src={'/fresnoState.png'}
+                            src={'/bulldogs.svg'}
                             height={76}
                             width={76}
                             alt="Fresno State Athletics"
+                            quality="100"
                           />
                     </div>
                     <div className={styles.text}>
@@ -74,16 +73,17 @@ export default function Home() {
                     </div>
                     <div className={styles.image}>
                       <Image
-                              src={'/pepsiLogo.png'}
+                              src={'/pepsi.svg'}
                               height={50}
                               width={50}
                               alt="Fresno State Athletics"
+                              quality="100"
                       />
                     </div>
 
                     
                   </div>
-                  <div className="row">
+                  <div className="row g-5">
                     <div className="col-4">
                       <div className={styles.boxDescription}>
                         <p>Step one id libero imperdiet, lacinia arcu ac, ullamcorper ligula. Quisque ut venenatis nulla. Nulla est magna, gravida at enim eget, imperdiet lobortis.</p>
@@ -99,8 +99,12 @@ export default function Home() {
                         <p>Step three sit amet aliquam quam faucibus sed. Proin nec ultricies libero. Vivamus sed urna.</p>
                       </div>
                     </div> 
-                    <CTA/>    
+                       
                   </div>
+                  <div className={styles.calltoaction}>
+                   <CTA/>
+                  </div>
+                   
                 </div>
                 <div className="col-6">
                   <div className={styles.desktop}>
@@ -149,6 +153,7 @@ export default function Home() {
                         height={40}
                         width={69}
                         alt="Fresno State Athletics"
+                        quality="100"
                       />
                     </a>
                   <div className={styles.desktop}><p>Copyright © 2020 Wit. All rights reserved.</p></div> 
@@ -160,7 +165,7 @@ export default function Home() {
                   <ul>
                     <li><a href="" target="_blank">FAQ</a></li>
                     <li><a href="" target="_blank">Privacy Policy</a></li>
-                    <li><a href="" target="_blank">Terms of Serivce</a></li>
+                    <li><a href="" target="_blank">Terms of Service</a></li>
                   </ul>
                   <div className={styles.mobile}><p>Copyright © 2020 Wit. All rights reserved.</p></div>
                 </div>

@@ -20,12 +20,12 @@ export default () => {
 				spaceBetween: 30,
 			},
 			600: {
-				slidesPerView: 2,
+				slidesPerView: 4,
 				spaceBetween: 30,
 			},
 			1100: {
-				slidesPerView: 4,
-				spaceBetween: 30,
+				slidesPerView: 5,
+				spaceBetween: 60,
 			}
 		}}
 	  >
@@ -107,7 +107,6 @@ export default () => {
 
 			</div>
 		</SwiperSlide>
-		...
 	  </Swiper>
 	);
   };

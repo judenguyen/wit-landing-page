@@ -6,8 +6,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Form from 'react-bootstrap/Form'
-
+import styles from './Form.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+const API_URL = process.env.NEXT_PUBLIC_WORDPRESS_URL;
 
 function EntryForm() {
   const handleSubmit = async (event) => {
@@ -83,6 +85,7 @@ function EntryForm() {
       <Button variant="primary" type="submit">
         Submit
       </Button>
+    
     </Form>
   );
 }
@@ -112,12 +115,8 @@ function FormDrawer() {
 
 export default function CTA() {
   return (
-    <Container>
-      <Row>
-        <Col>
+ 
           <FormDrawer />
-        </Col>
-      </Row>
-    </Container>
+  
   )
 }
