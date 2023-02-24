@@ -1,0 +1,25 @@
+@import "styles/utils";
+.text {
+  background: $white;
+  h3 {
+    color: #7E011C !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 800;
+    padding:0;
+    margin:0;
+  }
+  p {
+    color: $black;
+    font-size: 24px;
+    font-weight: 400;
+    line-height:1.2;
+    text-align: left;
+    padding:0;
+    margin:0;
+  }
+}
+.image {
+  position: relative;
+}
