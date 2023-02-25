@@ -143,7 +143,7 @@
             color: $white;
             font-size: 14px;
             @include media("<tablet") {
-              padding:0 0 30px;
+              padding:0 0 0;
               margin:0;
               font-size:13px;
             }
@@ -168,7 +168,7 @@
           }
     }
     .calltoaction{
-      padding: 0;
+      padding: 20px 0 0;
     }
 }
 .videos {
@@ -269,6 +269,7 @@ body .footer .row {
         text-decoration: none;
         &:hover {
             text-decoration: underline;
+            color: $lightRed;
         }
     }
     .flex {

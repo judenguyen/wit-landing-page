@@ -13,6 +13,7 @@
       color: #fff;
       z-index: 1;
       display: flex;
+      font-family: 'Open Sans', sans-serif;
       @include media("<tablet") {
         font-size: 11px;
       }
@@ -28,6 +29,7 @@
     color: #fff;
     padding: 0 2px;
     letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
     @include media("<tablet") {
       font-size: 11px;
     }

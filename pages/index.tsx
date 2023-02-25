@@ -20,8 +20,7 @@ export default function Home() {
         <meta name="description" content="Wit Sports Contest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"/>
-      </Head>
+        </Head>
       <main className={styles.main}>
         <section className={styles.header}>
           <div className={styles.headerText}>
@@ -32,9 +31,9 @@ export default function Home() {
                           <h5>Voting Begins in</h5>
                           <div className={styles.countdownContainer}>
                           <LaunchCountdown days={8}
-                                hours={23}
-                                minutes={55}
-                                seconds={41}
+                                hours={0}
+                                minutes={0}
+                                seconds={0}
                           />
                           </div>
                         </div> 
@@ -102,7 +101,7 @@ export default function Home() {
                        
                   </div>
                   <div className={styles.calltoaction}>
-                   <CTA/>
+                     <CTA/>
                   </div>
                    
                 </div>

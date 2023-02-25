@@ -16,8 +16,8 @@ function EntryForm() {
     event.preventDefault();
 
     const data = {
-      firstName: event.target.firstName.value,
-      lastName: event.target.lastName.value,
+      firstname: event.target.firstName.value,
+      lastname: event.target.lastName.value,
       email: event.target.email.value
     };
 
@@ -31,10 +31,10 @@ function EntryForm() {
       body: JSONdata
     };
 
-    const response = await fetch('/api/form', options);
+    const response = await fetch('/api/hello', options);
     const result = await response.json();
 
-    alert(`${result.data}`);
+    alert(`${result.message}`);
   };
 
   return (
